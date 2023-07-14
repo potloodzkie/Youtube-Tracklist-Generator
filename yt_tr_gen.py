@@ -105,10 +105,10 @@ def get_duration(filepath):
 
 
 def get_timestamp(duration):
-    minutes = int(duration / 60)
+    hours = int(duration / 3600)
+    minutes = int((duration % 3600) / 60)
     seconds = duration % 60
-    return f"{minutes:02d}:{seconds:05.2f}"
-
+    return f"{hours:01d}:{minutes:02d}:{seconds:05.2f}"
 
 def get_artist(directory):
     artists = set()
@@ -265,26 +265,8 @@ scrolled_window.add(console)
 console_box.pack_start(scrolled_window, True, True, 0)
 
 # Set the GTK dark mode
-style_provider = Gtk.CssProvider()
-style_provider.load_from_data(b"""
-    GtkWindow, GtkLabel {
-        color: #FFFFFF;
-        background-color: #202124;
-    }
-    GtkButton {
-        color: #FFFFFF;
-        background-color: #404244;
-    }
-    GtkEntry, GtkTextView {
-        color: #FFFFFF;
-        background-color: #303134;
-    }
-    GtkCheckButton {
-        color: #FFFFFF;
-        background-color: #202124;
-    }
-""")
-Gtk.StyleContext.add_provider_for_screen(Gdk.Screen.get_default(), style_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
+settings = Gtk.Settings.get_default()
+settings.set_property("gtk-application-prefer-dark-theme", True)
 
 # Create a box for the save button
 save_box = Gtk.Box(spacing=10)
