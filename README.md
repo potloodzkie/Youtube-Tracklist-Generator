@@ -8,4 +8,5 @@ pygobject
 ffmpeg  
   
   
-![yttracklist](https://github.com/potloodzkie/Youtube-Tracklist-Generator/assets/133517036/14f5cec1-82cf-4a2a-a23c-2b30b166edea)
+![tracklist](https://github.com/potloodzkie/Youtube-Tracklist-Generator/assets/133517036/e76a8b17-c5b7-4c06-aed9-48886589cdd4)
+
