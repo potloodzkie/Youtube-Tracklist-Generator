@@ -1,0 +1,4 @@
+eyed3==0.9.7
+mutagen==1.46.0
+pydub==0.24.1
+PyGObject==3.42.2
