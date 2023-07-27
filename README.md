@@ -1,6 +1,6 @@
 A little tool to generate youtube tracklists for complete album uploads
 You can choose a directory with audiofiles and generate a playlist with timestamps from the content.  
-When you want to upload a tape or vinyl rip you can choose for custom tracknumbers en enter the amount of a and b side tracks so the numbering will become A1 A2 B1 B2 etc  
+When you want to upload a tape or vinyl rip you can choose for custom tracknumbers and enter the amount of a and b side tracks so the numbering will become A1 A2 B1 B2 etc  
 
 Dependencies:  
   
